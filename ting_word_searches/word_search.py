@@ -6,7 +6,7 @@ def exists_word(word, instance):
         lines = file["linhas_do_arquivo"]
 
         ocurrences = [
-            {"linha": i + 1}
+            {"linha": index + 1}
             for index in range(len(lines))
             if word.lower() in lines[index].lower()
         ]
